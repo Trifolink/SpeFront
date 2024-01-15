@@ -6,9 +6,15 @@ function App() {
   return (
     <div className="App">
       <h1>Liste des tâches</h1>
-      <ul>
+      {/* <ul>
         {myTasks.map(task => (
           <li key={task.id}>{task.name}</li>
+        ))}
+      </ul> */}
+
+      <ul>
+        {myTasks.map(x => (
+          <li>{x.name}</li>
         ))}
       </ul>
     </div>
