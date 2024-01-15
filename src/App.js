@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import './Data/data';
+import { myTasks } from './Data/data';
 
 function App() {
   return (
