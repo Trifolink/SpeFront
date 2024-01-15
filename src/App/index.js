@@ -2,6 +2,7 @@ import logo from '../logo.svg';
 import '../App.css';
 import { myTasks } from '../Data/data';
 import styles from "./App.module.css";
+import Task from '../Tasks/';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
 
       <ul>
         {myTasks.map(x => (
-          <li>{x.name}</li>
+          <Task {...x}/>
         ))}
       </ul>
     </div>

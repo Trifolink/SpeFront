@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Task = ({ taskText }) => {
-  return <li>{taskText}</li>;
-};
-
-export default Task;
+export default function Task(props){
+// console.log("props=",props)
+    return(
+        <li>{props.name}</li>
+    )
+}
