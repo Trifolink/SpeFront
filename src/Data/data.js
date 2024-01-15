@@ -5,4 +5,6 @@ $myTasks = [
     
 ];
 
+console.log($myTasks);
+
 export { myTasks };
