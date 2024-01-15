@@ -3,4 +3,6 @@ $myTasks = [
     { id: 2, name: "Subaru" },
     { id: 3, name: "Supra" }
     
-]
+];
+
+export { myTasks };
