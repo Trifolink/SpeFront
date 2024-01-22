@@ -15,12 +15,22 @@ function App() {
         ))}
       </ul> */}
 
-      <ul>
-        {myTasks.map(x => (
-          <Task {...x}/>
-        ))}
-      </ul>
+<ul>
+  {myTasks.map(task => (
+    <Task key={task.id} {...task} onDoubleClick={() => handleDoubleClick(task)} />
+  ))}
+</ul>
+
+
     </div>
+  );
+}
+
+const Task = ({ name, onDoubleClick }) => {
+  return (
+    <li onDoubleClick={onDoubleClick}>
+      {name}
+    </li>
   );
 }
 
