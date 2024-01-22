@@ -16,7 +16,7 @@ function App() {
       <h1>Liste des tâches</h1>
       <h2 className={styles.title}>Sous titre</h2>
 
-      <TodoList myTasks={myTasks} handleDoubleClick={handleDoubleClick} /> /* on charge l'info du double clique*/
+      <TodoList myTasks={myTasks} handleDoubleClick={handleDoubleClick} /* on charge l'info du double clique*//> 
     </div>
   );
 }
