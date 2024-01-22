@@ -6,10 +6,6 @@ let myTasks = [
 
 export { myTasks };
 
-let task = [
-    { tache: "Miata" },
-    { tache: "Subaru" },
-    { tache: "Supra" } 
-];
-
-export { task }
+function addTask(){
+    
+}
