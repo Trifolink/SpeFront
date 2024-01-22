@@ -14,11 +14,6 @@ function App() {
     <div className="App">
       <h1>Liste des tâches</h1>
       <h2 className={styles.title}>Sous titre</h2>
-      {/* <ul>
-        {myTasks.map(task => (
-          <li key={task.id}>{task.name}</li>
-        ))}
-      </ul> */}
 
     <ul>
       {myTasks.map(x => (
@@ -31,3 +26,9 @@ function App() {
 }
 
 export default App;
+
+      /* <ul>
+        {myTasks.map(task => (
+          <li key={task.id}>{task.name}</li>
+        ))}
+      </ul> */
