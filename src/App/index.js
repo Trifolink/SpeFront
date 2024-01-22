@@ -2,7 +2,9 @@ import logo from '../logo.svg';
 import '../App.css';
 import { myTasks } from '../Data/data';
 import styles from "./App.module.css";
-import Task from '../Tasks/';
+// import Task from '../Tasks/';
+import TodoList from '../Tasks/Todolist';
+
 
 function App() {
 
@@ -15,11 +17,8 @@ function App() {
       <h1>Liste des tâches</h1>
       <h2 className={styles.title}>Sous titre</h2>
 
-    <ul>
-      {myTasks.map(x => (
-        <Task key={x.id} {...x} onDoubleClick={() => handleDoubleClick(x)} />
-      ))}
-    </ul>
+      <TodoList tasks={myTasks} onDoubleClick={handleDoubleClick} />
+
 
     </div>
   );
