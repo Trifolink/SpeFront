@@ -8,14 +8,14 @@ import React, { useState } from 'react';
 // }
 
 export default function Task({ name, onDoubleClick }) {
-    const [isActive, setIsActive] = useState(true);
+    const [counter, setCounter] = useState(true);
   
     const handleClick = () => {
-      setIsActive(!isActive);
+        setCounter(!counter);
     };
   
     const taskStyle = {
-      textDecoration: isActive ? 'none' : 'line-through'
+      textDecoration: counter ? 'none' : 'line-through'
     };
   
     return (
