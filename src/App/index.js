@@ -20,6 +20,8 @@ function App() {
   
   function handleSubmit(event){
   event.preventDefault(); 
+  alert(`t'as ecrit ca  : ${name}`);
+
   }
   
 
