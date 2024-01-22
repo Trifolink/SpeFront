@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TodoList from '../TodoList'; 
-import { myTasks } from '../Data/data';
+import { myTasks, addTask } from '../Data/data';
 import styles from "./App.module.css";
 import '../App.css';
 
@@ -21,6 +21,7 @@ function App() {
   function handleSubmit(event){
   event.preventDefault(); 
   alert(`t'as ecrit ca  : ${name}`);
+  addTask(name);
 
   }
   
