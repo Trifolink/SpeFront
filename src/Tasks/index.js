@@ -17,12 +17,3 @@ export default function Task(props){
 //         <li onDoubleClick={Double}>{props.name}</li>;
 //     )
 // }
-
-const Task = ({ name, onDoubleClick }) => {
-    return (
-      <li onDoubleClick={onDoubleClick}>
-        {name}
-      </li>
-    );
-  };
-  
