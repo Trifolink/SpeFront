@@ -1,12 +1,14 @@
 import React from 'react';
-import Task from './Tasks/Task';
+import Task from './Tasks';  
+import { myTasks } from '../Data/data'; 
 
-export default function TodoList({ tasks, onDoubleClick }) {
+export default function TodoList({ handleDoubleClick }) {
   return (
     <ul>
-    {myTasks.map(x => (
-      <Task key={x.id} {...x} onDoubleClick={() => onDoubleClick(x)} />
-    ))}
-  </ul>
+      {myTasks.map(x => (
+        <Task key={x.id} {...x} onDoubleClick={() => handleDoubleClick(x)} />
+      ))}
+    </ul>
   );
 }
+
