@@ -20,8 +20,6 @@ function App() {
         ))}
       </ul> */}
 
-
-
     <ul>
       {myTasks.map(x => (
         <Task key={x.id} {...x} onDoubleClick={() => handleDoubleClick(x)} />
