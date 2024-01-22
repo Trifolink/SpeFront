@@ -1,5 +1,5 @@
 import React from 'react';
-import Task from './Tasks';  
+import Task from './index';  
 import { myTasks } from '../Data/data'; 
 
 export default function TodoList({ handleDoubleClick }) {

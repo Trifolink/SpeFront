@@ -1,8 +1,9 @@
 import React from 'react';
-import TodoList from '../Tasks'; 
+import TodoList from '../Tasks/TodoList'; 
 import { myTasks } from '../Data/data';
 import styles from "./App.module.css";
 import '../App.css';
+
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <h1>Liste des tâches</h1>
       <h2 className={styles.title}>Sous titre</h2>
 
-      <TodoList myTasks={myTasks} />
+      <TodoList myTasks={myTasks} handleDoubleClick={handleDoubleClick} />
     </div>
   );
 }
