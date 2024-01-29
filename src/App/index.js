@@ -13,6 +13,7 @@ function App() {
 
   
   const [name,setName] = useState("");
+  const [taskList,setTaskList]=useState(myTasks);
 
   function handleChange(event){
   setName(event.target.value);
@@ -22,7 +23,7 @@ function App() {
   event.preventDefault(); 
   alert(`t'as ecrit ca  : ${name}`);
   addTask(name);
-
+setTaskList([...myTasks]);
   }
   
 
@@ -31,7 +32,7 @@ function App() {
       <h1>Liste des tâches</h1>
       <h2 className={styles.title}>Sous titre</h2>
 
-      <TodoList myTasks={myTasks} handleDoubleClick={handleDoubleClick} /* on charge l'info du double clique*//> 
+      <TodoList myTasks={taskList} handleDoubleClick={handleDoubleClick} /* on charge l'info du double clique*//> 
 
 
       <form onSubmit={handleSubmit}>
