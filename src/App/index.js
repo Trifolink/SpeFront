@@ -9,6 +9,8 @@ import '../App.css';
 function App() {
   const handleDoubleClick = (task) => {
     console.log(`Double clic sur la tâche : ${task.name}`);
+    task.isBlocked = true;
+    setTaskList([...myTasks]);
   };
 
   
