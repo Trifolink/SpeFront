@@ -16,15 +16,15 @@ function App() {
   const [taskList,setTaskList]=useState(myTasks);
 
   function handleChange(event){
-  setName(event.target.value);
+    setName(event.target.value);
   }
   
   function handleSubmit(event){
   event.preventDefault(); 
-  alert(`t'as ecrit ca  : ${name}`);
-  addTask(name);
-  setTaskList([...myTasks]);
-  setName("");
+    alert(`t'as ecrit ca  : ${name}`);
+    addTask(name);
+    setTaskList([...myTasks]);
+    setName("");
   }
   
 
