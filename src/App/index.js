@@ -23,7 +23,8 @@ function App() {
   event.preventDefault(); 
   alert(`t'as ecrit ca  : ${name}`);
   addTask(name);
-setTaskList([...myTasks]);
+  setTaskList([...myTasks]);
+  setName("");
   }
   
 
