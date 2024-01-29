@@ -25,7 +25,7 @@ function App() {
   event.preventDefault(); 
     alert(`t'as ecrit ca  : ${name}`);
     addTask(name);
-    setTaskList([...myTasks]);
+    setTaskList([...myTasks]); //copie du tableau actuelle ce qui a pour effet de refresh
     setName("");
   }
   
@@ -35,7 +35,7 @@ function App() {
       <h1>Liste des tâches</h1>
       <h2 className={styles.title}>Sous titre</h2>
 
-      <TodoList myTasks={taskList} handleDoubleClick={handleDoubleClick} /* on charge l'info du double clique*//> 
+      <TodoList myTasks={taskList} handleDoubleClick={handleDoubleClick}/> 
 
 
       <form onSubmit={handleSubmit}>
