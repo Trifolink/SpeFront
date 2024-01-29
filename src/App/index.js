@@ -4,14 +4,8 @@ import { myTasks, addTask } from '../Data/data';
 import styles from "./App.module.css";
 import '../App.css';
 
-import {Route, Routes} from "react-router-dom";
 
-return (
-  <Routes>
-  <Route path="/link1" element=<Component1/>
-  <Route path="/link2" element=<Conponent2/>
-  </Routes>
-);
+
 
 
 function App() {
@@ -54,6 +48,8 @@ function App() {
       
     </div>
   );
+
+
 }
 
 
