@@ -6,6 +6,13 @@ import '../App.css';
 
 import {Route, Routes} from "react-router-dom";
 
+return (
+  <Routes>
+  <Route path="/link1" element=<Component1/>
+  <Route path="/link2" element=<Conponent2/>
+  </Routes>
+);
+
 
 function App() {
   const handleDoubleClick = (task) => {
